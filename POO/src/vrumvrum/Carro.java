@@ -1,4 +1,6 @@
-public class Carro {
+package vrumvrum;
+
+public class Carro extends Veiculo {
     private String modelo;
     private String cor;
     private int capacidadeTanque; // em litros
