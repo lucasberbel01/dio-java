@@ -1,12 +1,18 @@
 package exercicios.veiculos;
 
 public class Carro extends Veiculo {
-    public Carro(String marca, String modelo) {
-        super(marca, modelo);
+    private int qtdPortas;
+
+    public Carro(int qtdPortas ,String marca, String modelo, int ano) {
+        super(marca, modelo, ano);
+        this.qtdPortas = qtdPortas;
     }
 
     @Override
-    public void ligar() {
-        System.out.println("liguei o carro");
+    public void exibirInfo() {
+        System.out.println("marca: " + marca);
+        System.out.println("modelo: " + modelo);
+        System.out.println("ano: " + ano);
+        System.out.println("quantidade de portas: " + qtdPortas);
     }
 }

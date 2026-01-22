@@ -4,25 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pedido {
-    private List<Produto> produtos;
+        private ArrayList<Produto> produtos;
 
-    public Pedido() {
-        this.produtos = new ArrayList<>();
+    public Pedido(ArrayList<Produto> produtos) {
+        this.produtos = produtos;
     }
 
-    public void adicionarProduto(Produto p){
-        produtos.add(p);
-        System.out.println("Produto adicionado");
+    public ArrayList<Produto> getProdutos() {
+        return produtos;
     }
 
-    public double calcularTotal(){
+    public void setProdutos(ArrayList<Produto> produtos) {
+        this.produtos = produtos;
+    }
 
-        double total = 0;
+    public void calculaTotal(){
+        double soma = 0.0;
 
-        for(Produto p : produtos){
-            total += p.getPreco();
-
+        for (Produto p : produtos){
+            soma+=p.getPreco();
         }
-        return total;
+        System.out.println("total da compra: " + soma );
     }
 }
+

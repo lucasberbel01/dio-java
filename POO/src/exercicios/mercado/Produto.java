@@ -5,8 +5,8 @@ public class Produto {
     private double preco;
 
     public Produto(String nome, double preco) {
-        this.nome = nome;
         this.preco = preco;
+        this.nome = nome;
     }
 
     public String getNome() {
@@ -25,3 +25,4 @@ public class Produto {
         this.preco = preco;
     }
 }
+
