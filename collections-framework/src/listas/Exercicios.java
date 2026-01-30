@@ -1,6 +1,5 @@
-package list;
+package listas;
 
-import javax.rmi.ssl.SslRMIClientSocketFactory;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
